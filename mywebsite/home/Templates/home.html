@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>bài 5 làm shop bán đồ</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style type="text/css">
+        *{
+            padding: 4px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+        .main{
+            width: 100%;
+            height: 130px;
+            background-color: rgb(255, 213, 0);
+            position:absolute;
+            display: inline;
+            text-align: center;
+            top:0;
+            left: 0;
+            }
+        .hop{
+            width: 40px;
+            height: 40px;
+            display: inline;
+            color: black;
+        }
+        .giovangdealsoc{
+            margin-left: 170px;
+            margin-top: 20px;
+            margin-right: 170px;
+            margin-bottom: 20px;
+            padding: 30px;
+            background-color: red;
+            }
+        .input {
+            width: 300px;
+            background-color: #f5f5f5;
+            color: #242424;
+            padding: .15rem .5rem;
+            min-height: 55px;
+            border-radius: 4px;
+            outline: none;
+            border: none;
+            line-height: 1.15;
+            box-shadow: 0px 10px 20px -18px;
+            }
+
+        input:focus {
+            border-bottom: 2px solid #5b5fc7;
+            border-radius: 4px 4px 2px 2px;
+            }
+
+        input:hover {
+            outline: 1px solid lightgrey;
+            }
+    </style>
+</head>
+<body>
+    <div class="main" style="padding-top: 8px;">
+        <a href="http://127.0.0.1:5500/admin/admin/Templates/home.html"><img src="thegioididong.png"></a>
+        <input class="input" name="text" placeholder="Nhập Đồ Bạn Cần Tìm..." type="search">
+        <a href="https://www.thegioididong.com/lich-su-mua-hang"><img src="lichsudonhang.png"></a>
+        <a href="https://www.thegioididong.com/cart"><img src="giohang.png"></a>
+        <a href="https://www.thegioididong.com/tin-tuc"><div class="hop">24h Công nghệ</div></a>
+        <a href="https://www.thegioididong.com/hoi-dap"><div class="hop">Hỏi đáp</div></a>
+        <a href="https://www.thegioididong.com/game-app"><div class="hop">Game App</div></a>
+        <ul class="nav" style="margin-left: 0px; padding-top: 9px;padding-bottom: 5px;">
+            <li class="nav-item">
+                <a class="nav-link" style="color:black" href="https://www.thegioididong.com/dtdd"><img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/icon-phone-96x96-2.png" height="30px">Điện Thoại</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color:black" href="https://www.thegioididong.com/laptop-ldp"><img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/icon-laptop-96x96-1.png"height="30px">Laptop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color:black" href="https://www.thegioididong.com/may-tinh-bang"><img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/icon-tablet-96x96-1.png"height="30px">Tablet</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color:black" href="https://www.thegioididong.com/phu-kien"><img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/icon-phu-kien-96x96-1.png"height="30px">Phụ Kiện</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color:black" href="https://www.thegioididong.com/dong-ho-thong-minh-ldp"><img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/icon-smartwatch-96x96-1.png"height="30px">Smartwatch</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color:black" href="https://www.thegioididong.com/dong-ho"><img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/watch-icon-96x96.png"height="30px">Đồng Hồ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color:black" href="https://www.thegioididong.com/may-doi-tra"><img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/icon-header-may-cu-30x30.png"height="30px">Máy Cũ Giá Rẻ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color:black" href="https://www.thegioididong.com/pc-may-in"><img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/icon-pc-96x96.png"height="30px">PC, Máy In</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color:black" href="https://www.thegioididong.com/sim-so-dep">Sim, Thẻ Cào</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color:black" href="https://www.thegioididong.com/tien-ich/thanh-toan-tra-gop">Dịch Vụ Tiện Ích  </a>
+            </li>
+        </ul>
+    </div>
+    <br><br><br><br><br><br>
+    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/03/banner/Banner-Big-Desk-1920x450.jpg" alt="loading" width="100%">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 70%; text-align: center">
+                <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/03/banner/oppo-flip-720-220-720x220-2.png" alt="loading" width="70%" height="50%">
+            </div>
+            <div class="carousel-item" style="height: 70%; text-align: center">
+                <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/03/banner/a54-720-220-720x220-14.png" alt="loading" width="70%" height="50%">
+            </div>
+            <div class="carousel-item" style="height: 70%; text-align: center;">
+                <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/03/banner/Apple-Watch-Xa-kho720-220-720x220-1.png" alt="loading" width="70%" height="50%">
+            </div>
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <a href="https://www.thegioididong.com/dtdd/xiaomi-redmi-note-12-pro-4g"><img src="sansalegiasoc1.png" width="20%"></a>
+        <a href="https://www.thegioididong.com/phu-kien-online-gia-soc"><img src="sansalegiasoc2.png" width="20%"></a>
+        <a href="https://www.thegioididong.com/laptop-gia-soc"><img src="sansalegiasoc3.png" width="20%"></a>
+        <a href="https://www.thegioididong.com/uu-dai-soc"><img src="sansalegiasoc4.png" width="20%"></a>
+        <br><br>
+        <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/03/banner/Promote-TZ-Des-1200x100-1.png">
+    </div>
+    <div class="giovangdealsoc">
+        <a style="color: yellow;"><h2><strong>sản phẩm</strong></h2></a>
+        <div class="container">
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-vang-thumb-600x600.jpg" alt="1">
+                    <div class="card-body text-center">
+                        <a href="https://www.thegioididong.com/dtdd/iphone-14-pro-max#2-gia" class="card-text" style="color: black;">Iphone 14 Pro Max 128GB</a>
+                        <a href="https://www.thegioididong.com/dtdd/iphone-14-pro-max#2-gia" style="color: red;">26.480.000₫ (-11%)</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/7264/231856/elio-el032-01-nu-1-600x600.jpg" alt="1">
+                    <div class="card-body text-center">
+                        <a href="https://www.thegioididong.com/dong-ho-deo-tay/elio-el032-01-nu#top-color-images-gallery-4" class="card-text" style="color: black;">Đồng hồ ELIO Nắng Xuân 40 mm Unisex EL032-01</a>
+                        <a href="https://www.thegioididong.com/dong-ho-deo-tay/elio-el032-01-nu#top-color-images-gallery-4"  style="color: red;">495.000₫ (-50%)</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/289670/iPhone-14-thumb-trang-200x200.jpg" alt="1">
+                    <div class="card-body text-center">
+                        <a href="https://www.thegioididong.com/dtdd/iphone-14-512gb" class="card-text" style="color: black;">Điện thoại iPhone 14 512GB </a>
+                        <a href="https://www.thegioididong.com/dtdd/iphone-14-512gb" style="color: red;">26.990.000₫ (-3%)</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.tgdd.vn/Products/Images/54/207453/tai-nghe-bluetooth-the-thao-jbl-v110-thumb-600x600.jpeg" alt="1">
+                    <div class="card-body text-center">
+                        <a href="https://www.thegioididong.com/tai-nghe/bluetooth-airpods-pro-magsafe-charge-apple-mlwk3" class="card-text" style="color: black;">Tai nghe Bluetooth JBL V110</a><br>
+                        <a href="https://www.thegioididong.com/tai-nghe/bluetooth-airpods-pro-magsafe-charge-apple-mlwk3" style="color: red;">1.310.000₫ (-40%)</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/7077/282959/dong-ho-befit-b4-thumbnn-600x600.jpg" alt="1">
+                    <div class="card-body text-center">
+                        <a href="https://www.thegioididong.com/dong-ho-thong-minh/befit-b4-hong?utm_flashsale=1" class="card-text" style="color: black;">Đồng hồ thông minh BeFit B4 44mm</a>
+                        <a href="https://www.thegioididong.com/dong-ho-thong-minh/befit-b4-hong?utm_flashsale=1" style="color: red;">490.000₫ (-50%)</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/9499/248337/adapter-sac-usb-12w-ava-tced2-trang-thumb-600x600.jpeg" alt="1">
+                    <div class="card-body text-center">
+                        <a href="https://www.thegioididong.com/adapter-sac/adapter-sac-type-c-pd-20w-xmobile-a829-trang" class="card-text" style="color: black;">Adapter Sạc Type C PD 20W Xmobile A829 </a><br>
+                        <a href="https://www.thegioididong.com/adapter-sac/adapter-sac-type-c-pd-20w-xmobile-a829-trang"  style="color: red;">210.000₫ (-30%)</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/44/288305/lenovo-yoga-slim-7-14ial7-i5-82qe000rvn-thumb-600x600.jpg" alt="1">
+                    <div class="card-body text-center">
+                        <a href="https://www.thegioididong.com/laptop/lenovo-yoga-7-14ial7-i5-82qe000rvn?utm_flashsale=1" class="card-text" style="color: black;">Laptop Lenovo Yoga 7 14IAL7 i5 1240P/16GB/512GB/Touch/Pen/Win11 (82QE000RVN) </a>
+                        <a href="https://www.thegioididong.com/laptop/lenovo-yoga-7-14ial7-i5-82qe000rvn?utm_flashsale=1" style="color: red;">21.690.000₫ (-30%)</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/44/288305/lenovo-yoga-slim-7-14ial7-i5-82qe000rvn-thumb-600x600.jpg" alt="1">
+                    <div class="card-body text-center">
+                        <a href="https://www.thegioididong.com/laptop/lenovo-yoga-7-14ial7-i7-82qe000qvn?utm_flashsale=1" class="card-text" style="color: black;">Laptop Lenovo Yoga 7 14IAL7 i7 1260P/16GB/512GB/Touch/Pen/Win11 (82QE000QVN) </a><br>
+                        <a href="https://www.thegioididong.com/laptop/lenovo-yoga-7-14ial7-i7-82qe000qvn?utm_flashsale=1" style="color: red;">23.790.000₫ (-30%)</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/58/217260/cap-type-c-lightning-20cm-xmobile-l10-trang-thumb-600x600.jpeg" alt="1">
+                    <div class="card-body text-center">
+                        <a href="https://www.thegioididong.com/cap-dien-thoai/cap-type-c-lightning-1m-apple-mm0a3-trang" class="card-text" style="color: black;">Cáp Type C - Lightning 1m Apple MM0A3 Trắng</a>
+                        <a href="https://www.thegioididong.com/cap-dien-thoai/cap-type-c-lightning-1m-apple-mm0a3-trang" style="color: red;">490.000₫ (-16%)</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/44/303499/TimerThumb/msi-gaming-gf63-thin-11uc-i5-1230vn-(10).jpg" alt="1">
+                    <div class="card-body text-center">
+                        <a href="https://www.thegioididong.com/laptop/msi-gaming-gf63-thin-11uc-i5-1230vn?utm_flashsale=1" class="card-text" style="color: black;">Laptop MSI Gaming GF63 Thin 11UC i5 11400H/8GB/512GB/4GB RTX3050/144Hz/Win11 (1230VN)</a>
+                        <a href="https://www.thegioididong.com/laptop/msi-gaming-gf63-thin-11uc-i5-1230vn?utm_flashsale=1"  style="color: red;">17.990.000₫ (-17%)</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/86/299929/chuot-khong-day-silent-rapoo-m300-xanh-thumb-1-600x600.jpg" alt="1">
+                    <div class="card-body text-center">
+                        <a href="https://www.thegioididong.com/chuot-may-tinh/chuot-khong-day-silent-rapoo-m300-xanh" class="card-text" style="color: black;">Chuột Không dây Bluetooth Silent Rapoo M300</a>
+                        <a href="https://www.thegioididong.com/chuot-may-tinh/chuot-khong-day-silent-rapoo-m300-xanh" style="color: red;">390.000₫ (-20%)</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.tgdd.vn/Products/Images/44/289613/asus-vivobook-14-x1402za-i3-ek249w-thumb-600x600.jpg" alt="1">
+                    <div class="card-body text-center">
+                        <a href="https://www.thegioididong.com/laptop/asus-vivobook-14-x1402za-i3-ek249w" class="card-text" style="color: black;">Laptop Asus Vivobook 14 X1402ZA i3 1220P/4GB/512GB/Win11 (EK249W)</a><br>
+                        <a href="https://www.thegioididong.com/laptop/asus-vivobook-14-x1402za-i3-ek249w" style="color: red;">10.490.000₫ (-25%)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin: -8px;margin-bottom: -100px;">
+    <p><a href="https://www.thegioididong.com/tin-tuc/tat-tan-tat-ve-chuong-trinh-uu-dai-app-qua-tang-vip-link-tai-va-cach-su-dung-1481677#gioithieu" style="color: black;margin-left: 15%;">Tích điểm Quà tặng VIP</a><a href="https://mwg.vn/" style="color: black;margin-left: 15%;">Giới thiệu công ty (MWG.vn)</a><a style="margin-left: 15%;">Tổng đài hỗ trợ (Miễn phí gọi)</a></p>
+    <p><a href="https://www.thegioididong.com/lich-su-mua-hang" style="color: black;margin-left: 219px;">Lịch sử mua hàng</a><a href="https://vieclam.thegioididong.com/" style="color: black;margin-left: 260px;">Tuyển dụng</a><a style="margin-left: 337px;">Gọi mua: 1800.1060 (7:30 - 22:00)</a></p>
+    <p><a href="https://www.thegioididong.com/tra-gop" style="color: black;margin-left: 219px;">Tìm hiểu về mua trả góp</a><a href="https://www.thegioididong.com/lien-he" style="color: black;margin-left: 212px;">Gửi góp ý, khiếu nại</a><a style="margin-left: 280px;">Khiếu nại: 1800.1062 (8:00 - 21:30)</a></p>
+    <p><a href="https://www.thegioididong.com/bao-hanh" style="color: black;margin-left: 219px;">Chính sách bảo hành</a><a href="https://www.thegioididong.com/he-thong-sieu-thi-the-gioi-di-dong" style="color: black;margin-left: 237px;">Tìm siêu thị (3.384 shop)</a><a style="margin-left: 249px;">Bảo hành: 1800.1064 (8:00 - 21:00)</a></p>
+    <p><a href="https://www.thegioididong.com/chinh-sach-bao-hanh-san-pham" style="color: black;margin-left: 219px;">Chính sách đổi trả</a><a href="https://www.thegioididong.com/?sclient=mobile" style="color: black;margin-left: 257px;">Xem bản mobile</a></p>
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#hide1" style="margin-left: 219px;">more</button>
+    <div id="hide1" class="collapse multi-collapse">
+        <p><a href="https://www.thegioididong.com/giao-hang" style="color: black;margin-left: 15%;">Giao hàng & Thanh toán</a></p>
+        <p><a href="https://www.thegioididong.com/huong-dan-mua-hang" style="color: black;margin-left: 219px;">Hướng dẫn mua online</a></p>
+        <p><a href="https://www.thegioididong.com/b2b" style="color: black;margin-left: 219px;">Bán hàng doanh nghiệp</a></p>
+        <p><a href="https://www.thegioididong.com/phieu-mua-hang" style="color: black;margin-left: 219px;">Phiếu mua hàng</a></p>
+        <p><a href="https://hddt.thegioididong.com/" style="color: black;margin-left: 219px;">In hóa đơn điện tử</a></p>
+        <p><a href="https://www.thegioididong.com/tos" style="color: black;margin-left: 219px;">Quy chế hoạt động</a></p>
+        <p><a href="https://www.thegioididong.com/noi-quy-cua-hang" style="color: black;margin-left: 219px;">Nội quy cửa hàng</a></p>
+        <p><a href="https://www.thegioididong.com/chat-luong-phuc-vu" style="color: black;margin-left: 219px;">Chất lượng phục vụ</a></p>
+        <p><a href="https://www.thegioididong.com/tin-tuc/can-trong-voi-nhung-sieu-thi-thegioididong-khong-chinh-chu--683321" style="color: black;margin-left: 219px;">Cảnh báo giả mạo</a></p>
+        <p><a href="https://www.thegioididong.com/chinh-sach-khui-hop-apple" style="color: black;margin-left: 219px;">Chính sách khui hộp sản phẩm Apple</a></p>
+        <br>
+    </div>
+    </div>
+    <div style="background-color:rgb(228, 227, 227);text-align: center;margin: -8px;margin-top: 100px;">
+        <br>© 2018. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH & ĐT TP.HCM cấp ngày 02/01/2007. GPMXH: 238/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 04/06/2020.<br>Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh. Điện thoại: 028 38125960. Email: cskh@thegioididong.com. Chịu trách nhiệm nội dung: Huỳnh Văn Tốt.<a href="https://www.thegioididong.com/thoa-thuan-su-dung-trang-mxh"> Xem chính sách sử dụng</a><p></p><br>
+    </div>
+</body>
+</html>
